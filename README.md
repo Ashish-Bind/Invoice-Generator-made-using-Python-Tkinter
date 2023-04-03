@@ -11,7 +11,7 @@ Invoice generator made by using Python GUI library called Tkinter and another li
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Ashish-Bind/Invoice-Generator-made-using-Python-Tkinter.git
 ```
 
 Install docxtpl library
