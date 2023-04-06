@@ -4,6 +4,7 @@ Invoice generator made by using Python GUI library called Tkinter and another li
 
 - All the Invoice of PDF format will be stored in 'Invoice' folder.
 - All the Generated Invoice of DOCX format will be stored in 'Invoice/Word'.
+- Create a 'Invoice' folder and inside it create 'Word' folder for Proper working.
 
 ## Screenshot
 
