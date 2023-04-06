@@ -2,9 +2,12 @@
 
 Invoice generator made by using Python GUI library called Tkinter and another library docxtpl which is used to covnvert Template file into a Invoice.
 
-## Screenshot
-![invoice generator](https://user-images.githubusercontent.com/121487855/229485625-0aaff6d5-c1ee-4a74-b6da-f2cd672d6a96.png)
+- All the Invoice of PDF format will be stored in 'Invoice' folder.
+- All the Generated Invoice of DOCX format will be stored in 'Invoice/Word'.
 
+## Screenshot
+
+![invoice generator](https://user-images.githubusercontent.com/121487855/229485625-0aaff6d5-c1ee-4a74-b6da-f2cd672d6a96.png)
 
 ## Run Locally
 
