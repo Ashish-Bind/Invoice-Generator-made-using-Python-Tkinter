@@ -1,7 +1,8 @@
 from tkinter import *
 from tkinter import ttk
 from docxtpl import DocxTemplate
-import datetime
+from docx2pdf import convert
+import time
 
 invoiceList=[]
 
@@ -21,13 +22,15 @@ def generateInvoice():
     phone = phoneEntry.get()
     total = sum(item[3] for item in invoiceList)
     newDoc.render({
-        'name':firstName+''+lastName,
+        'name':firstName+' '+lastName,
         'phone':phone,
         'invoice_list':invoiceList,
         'total':total
     })
-    # docName = firstName+lastName+'_'+datetime.datetime.now().strftime('%Y-%m-%d-%H%M%S')+'.docx'
-    newDoc.save(firstName+lastName+'_'+datetime.datetime.now().strftime('%Y-%m-%d-%H%M%S')+'.docx')
+    newDoc.save('Invoice/Word/'+firstName+lastName+'.docx')
+    time.sleep(2.0)
+    convert('Invoice/Word/'+firstName+lastName+'.docx',
+            'Invoice/'+firstName+lastName+'.pdf')
 
 def clearItem():
     quantitySpinBox.delete(0,END)
